@@ -1,0 +1,26 @@
+[
+  {
+    "category_id": 1,
+    "title": "Dâu tây Đà Lạt",
+    "image": "./images/dtdl.jpg",
+    "id": 1
+  },
+  {
+    "category_id": 1,
+    "title": "Dâu tây Trung Quốc",
+    "image": "./images/dttq.jpg",
+    "id": 2
+  },
+  {
+    "category_id": 2,
+    "title": "Khoai tây Đà Lạt",
+    "image": "./images/ktdl.jpg",
+    "id": 3
+  },
+  {
+    "category_id": 2,
+    "title": "Khoai tây Trung Quốc",
+    "image": "./images/kttq.jpg",
+    "id": 4
+  }
+]
