@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "build:tailwind": "npx tailwindcss -i ./src/index.css -o ./dist/index.css --watch"
+    "build:tailwind": "npx tailwindcss -i ./src/index.css -o ./dist/index.css"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
