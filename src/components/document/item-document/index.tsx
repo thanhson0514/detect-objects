@@ -12,7 +12,7 @@ const ItemDocument: React.FC<{ id: number }> = ({ id }) => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  });
 
   return <div>Item Document</div>;
 };
