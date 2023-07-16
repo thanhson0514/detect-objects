@@ -9,13 +9,12 @@ const Upload: FC = () => {
   const [image, setImage] = useState(null);
   const [fileName, setFileName] = useState("No selected file");
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = (e: React.FormEvent): void => {
     e.preventDefault();
   };
 
-  const onChange = (e: React.ChangeEvent) => {
+  const onChange = (e: React.ChangeEvent): void => {
     const files = e.target["files"];
-    console.log("FILE:", files);
     files[0] && setFileName(files[0].name);
     if (files) {
       setImage(URL.createObjectURL(files[0]));
@@ -27,8 +26,8 @@ const Upload: FC = () => {
       <h1 className="prose-h1">Quét nông sản</h1>
       <form
         onSubmit={onSubmit}
-        onClick={() => {
-          let element: HTMLElement = document.querySelector(
+        onClick={(): void => {
+          const element: HTMLElement = document.querySelector(
             ".input-field"
           ) as HTMLElement;
           element.click();
@@ -59,7 +58,7 @@ const Upload: FC = () => {
         <span className="upload-content">
           {fileName} -
           <DeleteOutlineOutlinedIcon
-            onClick={() => {
+            onClick={(): void => {
               setFileName("No selected File");
               setImage(null);
             }}

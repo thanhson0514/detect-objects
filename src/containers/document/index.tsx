@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { typeDetailDocument, typeDocuments } from "../../data/types";
+import { typeDocuments } from "../../data/types";
 import { fetchAllDocuments } from "../../data";
 import ItemDocument from "../../components/document/item-document";
 
